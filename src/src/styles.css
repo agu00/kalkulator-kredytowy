@@ -1,0 +1,14 @@
+* {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+h1, h2 {
+  color: #0b3c5d;
+}
+
+body {
+  background-color: rgba(191,191,191,0.5);
+}
+
+
+@import '~@angular/material/prebuilt-themes/deeppurple-amber.css';

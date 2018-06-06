@@ -1,0 +1,46 @@
+
+<h3>Kredyt samochodowy</h3>
+
+<div>
+  <mat-form-field>
+    <p>Cena pojazdu</p>
+    <input [(ngModel)]="kredytS.cena" matInput placeholder="zł" type="number">
+  </mat-form-field>
+
+<mat-form-field>
+    <p>Wkład własny</p>
+    <input [(ngModel)]="kredytS.wklad" matInput placeholder="zł" type="number">
+  </mat-form-field>
+
+  <mat-form-field>
+    <p>Ilość rat w miesiącach</p>
+    <input [(ngModel)]="kredytS.raty" matInput type="number">
+  </mat-form-field>
+
+  <h4>Parametry kredytu</h4>
+
+    <mat-form-field>
+    <p>Oprocentowanie</p>
+    <input [(ngModel)]="kredytS.oprocentowanie" matInput placeholder="%" type="number" min="1" max="100">
+  </mat-form-field>
+
+   <mat-form-field>
+    <p>Prowizja</p>
+    <input [(ngModel)]="kredytS.prowizja" matInput placeholder="%" type="number" min="1" max="100">
+  </mat-form-field>
+
+   <mat-form-field>
+    <p>Inne koszty</p>
+    <input [(ngModel)]="kredytS.inneKoszty" matInput placeholder="zł" type="number">
+  </mat-form-field>
+
+</div>
+
+<button mat-button (click)="obliczSamochodowy()">Oblicz</button>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<mat-card>
+  <h2>Wysokość miesięcznej raty</h2>
+  <h2>{{ valueSamochodowy }}</h2>
+</mat-card>
+

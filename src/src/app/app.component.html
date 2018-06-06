@@ -1,0 +1,18 @@
+
+<div class="grid-container">
+<mat-card>
+<h1>Kalkulator Kredytowy</h1>
+<button mat-button [matMenuTriggerFor]="menu">Wybierz rodzaj kredytu</button>
+<mat-menu #menu="matMenu">
+  <button mat-menu-item routerLink="/gotowkowy">Kredyt gotówkowy</button>
+  <button mat-menu-item routerLink="/samochodowy">Kredyt samochodowy</button>
+  <button mat-menu-item routerLink="/hipoteczny">Kredyt hipoteczny</button>
+</mat-menu>
+<br/>
+<br/>
+<br/>
+<hr/>
+<router-outlet></router-outlet>
+</mat-card>
+
+</div>

@@ -1,0 +1,42 @@
+
+<h3>Kredyt gotówkowy</h3>
+
+<div>
+  <mat-form-field>
+    <p>Kwota kredytu</p>
+    <input [(ngModel)]="kredyt.kwota" matInput placeholder="zł" type="number">
+  </mat-form-field>
+
+  <mat-form-field>
+    <p>Ilość rat w miesiącach</p>
+    <input [(ngModel)]="kredyt.raty" matInput type="number" >
+  </mat-form-field>
+
+  <h4>Parametry kredytu</h4>
+
+    <mat-form-field>
+    <p>Oprocentowanie</p>
+    <input [(ngModel)]="kredyt.oprocentowanie" matInput placeholder="%" type="number" min="1" max="100" >
+  </mat-form-field>
+
+   <mat-form-field>
+    <p>Prowizja</p>
+    <input [(ngModel)]="kredyt.prowizja" matInput placeholder="%" type="number" min="1" max="100" >
+  </mat-form-field>
+
+   <mat-form-field>
+    <p>Ubezpieczenie</p>
+    <input  [(ngModel)]="kredyt.wartoscUbezpieczenia" matInput placeholder="zł" type="number" >
+  </mat-form-field>
+
+</div>
+<button mat-button (click)="obliczGotowkowy()">Oblicz</button>
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+<mat-card>
+  <h2>Wysokość miesięcznej raty</h2>
+  <h2>{{ valueGotowkowy }}</h2>
+</mat-card>
+
+

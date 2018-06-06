@@ -1,0 +1,12 @@
+* {
+    color: #0b3c5d;
+}
+
+button {
+  background-color: #0b3c5d;
+  color: rgba(191,191,191); 
+}
+
+.grid-container {
+  display: inline-grid;
+}
